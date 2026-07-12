@@ -268,7 +268,7 @@ function renderRecap(event, isNext) {
   return `
     <div class="event-recap is-empty">
       <span class="recap-label">開催レポート</span>
-      <p class="muted">準備中です。</p>
+      <p class="muted">後日公開予定です。</p>
     </div>`;
 }
 
@@ -295,7 +295,7 @@ function featuredEventCard(event) {
        </div>`
     : "";
   const cover = event.cover
-    ? `<img class="event-cover" src="${event.cover}" alt="${escapeHtml(title)} ${escapeHtml(event.subtitle)}" loading="lazy" />`
+    ? `<img class="event-cover" src="${event.cover}" alt="${escapeHtml(title)} ${escapeHtml(event.subtitle)}" loading="eager" fetchpriority="high" />`
     : "";
   const numberPill = `<span class="pill pill-number">${escapeHtml(event.number)}</span>`;
   return `
@@ -324,7 +324,7 @@ function pastEventCard(event) {
   const report =
     event.recap && event.recap.url
       ? `<a class="past-report" href="${event.recap.url}" target="_blank" rel="noopener noreferrer">開催レポート →</a>`
-      : `<span class="past-report is-empty">開催レポート準備中</span>`;
+      : `<span class="past-report is-empty">開催レポート 後日公開予定</span>`;
   const link = event.url
     ? `<a class="past-link" href="${event.url}" target="_blank" rel="noopener noreferrer">Lumaで見る →</a>`
     : "";
