@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wonder Tech Hub | わからないまま、未来に触る場所。</title>
+    <meta
+      name="description"
+      content="Wonder Tech Hubは、AI・金融・Web3をテーマに、知識と実践のあいだをつなぐ小さな実験コミュニティです。話して、触って、作って、自分の道具にしていく場所。"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="theme-color" content="#d71920" />
+
+    <!-- 公開ドメイン。Vercelの本番URLに合わせています。独自ドメイン設定後はここを差し替え。 -->
+    <link rel="canonical" href="https://wonder-tech-hub.vercel.app/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:site_name" content="Wonder Tech Hub" />
+    <meta property="og:url" content="https://wonder-tech-hub.vercel.app/" />
+    <meta property="og:title" content="Wonder Tech Hub | わからないまま、未来に触る場所。" />
+    <meta
+      property="og:description"
+      content="AI・金融・Web3を、知識で止めずに触って作る入口にする実験コミュニティ。話して、触って、作る。"
+    />
+    <!-- SNSのクローラーはSVGを表示できないためPNGを主に指定。絶対URL推奨。 -->
+    <meta property="og:image" content="https://wonder-tech-hub.vercel.app/assets/wth-og.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Wonder Tech Hub — わからないまま、未来に触る場所。" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Wonder Tech Hub | わからないまま、未来に触る場所。" />
+    <meta
+      name="twitter:description"
+      content="AI・金融・Web3を、知識で止めずに触って作る入口にする実験コミュニティ。"
+    />
+    <meta name="twitter:image" content="https://wonder-tech-hub.vercel.app/assets/wth-og.png" />
+    <meta name="twitter:site" content="@WonderTechHub" />
+    <meta name="twitter:creator" content="@WonderTechHub" />
+
+    <link rel="icon" href="./assets/wth-mark.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./assets/wth-mark.svg" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="サイトヘッダー">
+      <a class="brand" href="#top" aria-label="Wonder Tech Hub ホーム">
+        <img class="brand-logo" src="./assets/logo-wide.png" alt="Wonder Tech Hub" height="40" />
+      </a>
+      <nav class="site-nav" aria-label="メインナビゲーション">
+        <a href="#about">About</a>
+        <a href="#events">Events</a>
+        <a href="#members">Members</a>
+        <a href="#faq">FAQ</a>
+        <a href="#join">Join</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span>AI</span><span>Finance</span><span>Web3</span></p>
+          <h1 id="hero-title" class="hero-logo-title">
+            <img class="hero-logo" src="./assets/logo-wide.png" alt="Wonder Tech Hub" />
+          </h1>
+          <p class="catch">会話AIの、その先へ。</p>
+          <p class="lead">
+            AI・金融・Web3をテーマに、知識と実践のあいだをつなぐ小さな実験コミュニティ。
+            聞いて終わりにせず、話して、触って、作って、自分の道具にしていく。
+          </p>
+          <div class="hero-actions" aria-label="主要リンク">
+            <a class="button primary" href="https://luma.com/i9bxfo6s" data-next-event target="_blank" rel="noopener noreferrer">次回イベントを見る</a>
+            <a class="button secondary" href="#events">過去の開催を見る</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <img class="hero-mascot" src="./assets/mascot.png" alt="" />
+        </div>
+      </section>
+
+      <section id="about" class="about section-shell" aria-labelledby="about-title">
+        <div class="section-kicker">About</div>
+        <div class="section-grid">
+          <div>
+            <h2 id="about-title">Wonder Tech Hubとは</h2>
+          </div>
+          <div class="body-copy">
+            <p>
+              AIやWeb3を、専門家だけのものにしない。かといって、薄い初心者向けにもしない。
+              Wonder Tech Hubは、その中間にある曖昧で面白い場所から始まります。
+            </p>
+            <p>
+              わからないことを、わからないまま話せる。ツールや技術に実際に触り、作るところまで行く。
+              知識量で距離を測るのではなく、仕事・創作・発信・投資・生活それぞれの現場から
+              「自分ならどう使うか」を持ち帰る場所です。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="concept section-shell" aria-labelledby="concept-title">
+        <div class="section-kicker">Concept</div>
+        <div class="section-heading">
+          <h2 id="concept-title">話して、触って、作る。</h2>
+          <p>会話AIで止まっている状態から、作業委任・制作・プロトタイピングの入口へ。そこへ向かう3つの動き。</p>
+        </div>
+        <div id="concept-list" class="card-grid concept-grid"></div>
+      </section>
+
+      <section id="stages" class="stages section-shell" aria-labelledby="stages-title">
+        <div class="section-kicker">AI活用ステージ</div>
+        <div class="section-heading">
+          <h2 id="stages-title">いまの現在地から、一歩進める。</h2>
+          <p>知識量を競うものではありません。ステージ1「これから」からステージ5「自走化」まで。いま自分がAIをどう使っているか、その現在地を確かめる目安です。</p>
+        </div>
+        <figure class="stage-figure">
+          <img class="stage-image" src="./assets/ai-stages.jpg" alt="AI活用ステージ。ステージ1 これから：生成AIはまだほとんど使っていない。ステージ2 日常利用：無料AIで検索・要約・相談・文章作成を試している。ステージ3 実務活用：有料AIを仕事・創作・学習・情報整理に日常的に活用。ステージ4 実行委任：Codex / Claude Codeで調査・実装・修正・資料化をAIに任せている。ステージ5 自走化：AIエージェントや自動化が日常のタスクを継続的に進めている。" loading="lazy" />
+        </figure>
+      </section>
+
+      <section id="events" class="events section-shell" aria-labelledby="events-title">
+        <div class="section-kicker">Events</div>
+        <div class="section-heading">
+          <h2 id="events-title">開催イベント</h2>
+          <p>毎回ひとつの入口を選び、実践に近づく夜をつくります。過去回と次回のテーマはこちら。</p>
+        </div>
+        <div id="event-list" class="event-list"></div>
+        <div id="stats-list" class="stats-row" aria-label="これまでの実績"></div>
+      </section>
+
+      <section id="audience" class="audience section-shell" aria-labelledby="audience-title">
+        <div class="section-kicker">For You</div>
+        <div class="section-heading">
+          <h2 id="audience-title">こんな方に向いています。</h2>
+          <p>ひとつでも当てはまれば、たぶん楽しめます。現在地はバラバラで大丈夫です。</p>
+        </div>
+        <ul id="audience-list" class="audience-grid"></ul>
+      </section>
+
+      <section id="members" class="members section-shell" aria-labelledby="members-title">
+        <div class="section-kicker">Members</div>
+        <div class="section-heading">
+          <h2 id="members-title">運営メンバー</h2>
+          <p>専門性も現在地も違うメンバーが、技術と日常のあいだに橋をかけています。</p>
+        </div>
+        <div id="member-list" class="card-grid member-grid"></div>
+      </section>
+
+      <section id="faq" class="faq section-shell" aria-labelledby="faq-title">
+        <div class="section-kicker">FAQ</div>
+        <div class="section-heading">
+          <h2 id="faq-title">よくある質問</h2>
+          <p>参加前の不安は、だいたいこのあたり。ほかにあればXのDMへ。</p>
+        </div>
+        <div id="faq-list" class="faq-list"></div>
+      </section>
+
+      <section id="follow" class="follow section-shell" aria-labelledby="follow-title">
+        <div class="section-kicker">On X</div>
+        <div class="section-heading">
+          <h2 id="follow-title">最新情報はXで。</h2>
+          <p>次回告知や当日の様子は @WonderTechHub で流しています。</p>
+        </div>
+        <div class="x-embed">
+          <!-- X（Twitter）タイムライン埋め込み。widgets.js が読み込まれるとタイムラインが表示されます。
+               ※ http/https のページでのみ動作します（file:// では表示されません）。localhost か公開後に表示されます。
+               ※ X側の設定変更で表示されない場合もあるため、下の x-card をフォールバックとして常設しています。 -->
+          <a class="twitter-timeline" data-height="560" data-theme="light" data-dnt="true"
+             href="https://twitter.com/WonderTechHub?ref_src=twsrc%5Etfw">@WonderTechHub のポスト</a>
+          <div class="x-card">
+            <span class="x-card-mark" aria-hidden="true">𝕏</span>
+            <div>
+              <span class="x-card-handle">@WonderTechHub</span>
+              <p>次回告知や当日の様子はXで発信しています。タイムラインが表示されない環境では、こちらから。</p>
+              <a class="button primary" href="https://x.com/WonderTechHub" target="_blank" rel="noopener noreferrer">Xでフォロー</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="join" class="join section-shell" aria-labelledby="join-title">
+        <div class="join-panel">
+          <div>
+            <div class="section-kicker">Contact / Join</div>
+            <h2 id="join-title">次の入口で会いましょう。</h2>
+            <p>
+              イベント参加はLumaから、最新情報はXで。登壇・スポンサー・コラボの相談も歓迎です。
+              相談はXのDMからどうぞ。
+            </p>
+          </div>
+          <div class="join-actions">
+            <a class="button primary" href="https://luma.com/i9bxfo6s" data-next-event target="_blank" rel="noopener noreferrer">Lumaで参加する</a>
+            <a class="button secondary" href="https://x.com/WonderTechHub" target="_blank" rel="noopener noreferrer">Xをフォロー</a>
+            <!-- 相談フォームのURLが決まったら、ここにボタンを追加:
+            <a class="button secondary" href="FORM_URL" target="_blank" rel="noopener noreferrer">相談フォーム</a> -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <span>Wonder Tech Hub</span>
+        <span aria-hidden="true">♠ ♥ ♣ ♦</span>
+      </div>
+      <p class="footer-tagline">AI・金融・Web3を、触って作る入口へ。</p>
+      <div class="footer-links">
+        <a href="https://x.com/WonderTechHub" target="_blank" rel="noopener noreferrer">X</a>
+        <a href="https://luma.com/calendar/cal-J6WIGrcS23UvdKi" target="_blank" rel="noopener noreferrer">Luma</a>
+      </div>
+      <small class="footer-copy">© <span id="footer-year">2026</span> Wonder Tech Hub</small>
+    </footer>
+
+    <script src="./site.js" defer></script>
+    <!-- X（Twitter）埋め込みウィジェット。オフライン/file:// では読み込まれません。 -->
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </body>
+</html>

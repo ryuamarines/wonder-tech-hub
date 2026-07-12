@@ -1,0 +1,26 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Vercel
+.vercel/
+
+# 依存物（このプロジェクトは静的サイトのため通常は不要）
+node_modules/
+
+# 未使用アセット（差し替え前の残存ファイル。公開に不要）
+assets/ai-levels.jpeg
+assets/ai-stages.png
+assets/avatar-ryu.png
+assets/avatar-massu.png
+assets/avatar-otogi.png
+assets/avatar-richi.png
+assets/event-01.png
+assets/event-02.png
+assets/event-03.png
+assets/event-03-sq.jpg
+assets/wth-stages.svg
+assets/wth-og.svg
