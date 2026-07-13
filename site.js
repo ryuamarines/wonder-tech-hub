@@ -351,7 +351,7 @@ function renderEvents() {
   const past = all.filter((e) => statusLabel(e) !== "Next Event");
   const featured = upcoming.map(featuredEventCard).join("");
   const pastHtml = past.length
-    ? `<div class="past-events">
+    ? `<div class="past-events" id="past-events">
          <h3 class="past-heading">過去の開催</h3>
          <div class="past-grid">${past.map(pastEventCard).join("")}</div>
        </div>`

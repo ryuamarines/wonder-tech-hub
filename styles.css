@@ -534,13 +534,12 @@ h3 {
 }
 
 .tag {
-  border: 1px solid rgba(215, 25, 32, 0.28);
-  border-radius: 999px;
-  padding: 4px 12px;
-  color: var(--deep-red);
+  border-radius: 6px;
+  padding: 3px 10px;
+  color: var(--muted);
   font-size: 13px;
-  font-weight: 800;
-  background: rgba(255, 255, 255, 0.6);
+  font-weight: 700;
+  background: rgba(17, 17, 17, 0.05);
 }
 
 .member-grid {
