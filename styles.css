@@ -124,10 +124,10 @@ a {
 }
 
 .eyebrow span {
-  border: 1px solid rgba(215, 25, 32, 0.28);
-  border-radius: 999px;
-  padding: 4px 10px;
-  background: rgba(255, 255, 255, 0.62);
+  border-radius: 6px;
+  padding: 3px 10px;
+  color: var(--muted);
+  background: rgba(17, 17, 17, 0.05);
 }
 
 h1,
@@ -423,8 +423,7 @@ h3 {
 }
 
 .pill-number {
-  border-color: var(--red);
-  color: var(--red);
+  color: var(--muted);
   font-family: Georgia, "Times New Roman", serif;
   font-weight: 900;
 }
