@@ -303,7 +303,7 @@ function featuredEventCard(event) {
       ${cover}
       <div class="event-body">
         <div class="event-meta">${numberPill}${metaPills}</div>
-        <h3>${escapeHtml(title)}<br />${escapeHtml(event.subtitle)}</h3>
+        <h3>${escapeHtml(event.subtitle)}</h3>
         <p>${escapeHtml(event.description)}</p>
         ${tags}
         ${cta}
