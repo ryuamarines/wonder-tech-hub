@@ -483,3 +483,13 @@ wireNextEventLinks();
 // フッターの年を自動更新
 const yearEl = document.querySelector("#footer-year");
 if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+
+// ページトップへ戻るボタン。一定量スクロールしたら表示。
+const backToTop = document.querySelector("#back-to-top");
+if (backToTop) {
+  const toggleBackToTop = () => {
+    backToTop.classList.toggle("is-visible", window.scrollY > 600);
+  };
+  toggleBackToTop();
+  window.addEventListener("scroll", toggleBackToTop, { passive: true });
+}

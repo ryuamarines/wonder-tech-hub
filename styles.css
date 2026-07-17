@@ -1144,3 +1144,36 @@ a.past-report:hover {
     flex-direction: column;
   }
 }
+
+.back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--red);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 900;
+  box-shadow: 0 10px 24px rgba(17, 17, 17, 0.22);
+  z-index: 30;
+  opacity: 0;
+  transform: translateY(8px);
+  transition:
+    opacity 200ms ease,
+    transform 200ms ease;
+}
+
+.back-to-top.is-visible {
+  display: inline-flex;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  transform: translateY(-2px);
+}
